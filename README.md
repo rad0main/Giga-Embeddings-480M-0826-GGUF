@@ -1,0 +1,1 @@
+# Giga-Embeddings GGUF release
