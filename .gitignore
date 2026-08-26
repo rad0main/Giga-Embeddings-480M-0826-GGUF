@@ -1,0 +1,57 @@
+# ---- weights (Hugging Face) ----
+*.gguf
+models/
+hf_cache/
+.cache/
+
+# ---- heavy logs / build outputs ----
+logs/*.json
+logs/server_*.log
+logs/05-quantize.log.err
+logs/embedding_output.json
+logs/meta_both.txt
+logs/meta_giga.txt
+logs/meta_def.txt
+logs/02-build.log
+logs/04-convert.log
+logs/01-configure.log
+logs/01b-reconfigure.log
+logs/03-download.log
+logs/06-smoketest*
+logs/_smoke_server*
+logs/prompt.txt
+logs/smoke_test.py
+logs/debug_subprocess.py
+logs/_GIGA_GGUF.txt
+logs/_DEF_GGUF.txt
+logs/quantize-help.txt
+logs/server-help.txt
+logs/err*.txt
+logs/embedding_output*
+
+# ---- python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---- secrets / env ----
+.env
+.env.*
+*.pem
+*.key
+
+# ---- build / vendored sources ----
+llama.cpp/
+
+# ---- OS / IDE ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

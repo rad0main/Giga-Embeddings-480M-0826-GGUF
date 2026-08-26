@@ -1,0 +1,6 @@
+# logs/ — allowlist only the bench console outputs
+*
+!embed_bench_giga.console.txt
+!embed_bench_default.console.txt
+!.gitignore
+!summary.txt
