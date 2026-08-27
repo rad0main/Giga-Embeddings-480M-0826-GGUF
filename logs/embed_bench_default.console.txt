@@ -1,0 +1,24 @@
+[META] default: arch=qwen3 dim=1024 ctx=32768 pooling=UNKNOWN
+[META] server pid=7184 starting...
+[EM-016] load_s: 7.32
+[EM-012] dim: 1024
+[EM-027] norm: 1.0
+[EM-028] det: -0.0
+[EM-017] lat_ms: 199.4 (p50=199.5)
+[EM-018] batch_thr: 9.16 emb/s (32 in 3.4927s)
+[EM-032] sim: [0.8499, 0.7977, 0.866]
+[EM-033] dissim: [0.6694, 0.7694]
+  Q='Что случилось с механизмом в мастерской?' gold=[6, 2] top1=0 (MISS) top5=[0, 6, 2, 7, 5]
+  Q='С кем Казлина договаривалась о грузе?' gold=[5] top1=5 (OK) top5=[5, 1, 0, 2, 7]
+  Q='Кто следил за караваном?' gold=[4] top1=4 (OK) top5=[4, 5, 0, 1, 7]
+[EM-044] no-instr: recall@1=0.6667 recall@3=1.0 mrr=0.8333
+  Q='Instruct: найди релевантное воспоминание
+Query: Чт' gold=[6, 2] top1=0 (MISS) top5=[0, 2, 7, 6, 5]
+  Q='Instruct: найди релевантное воспоминание
+Query: С ' gold=[5] top1=5 (OK) top5=[5, 0, 2, 1, 7]
+  Q='Instruct: найди релевантное воспоминание
+Query: Кт' gold=[4] top1=0 (MISS) top5=[0, 4, 2, 5, 7]
+[EM-044] instr:    recall@1=0.3333 recall@3=1.0 mrr=0.6667
+[OUT] D:\AIprojects\embedding-deploy\logs\embed_bench_default.json
+[LOG] D:\AIprojects\embedding-deploy\logs\server_default.log
+DONE
